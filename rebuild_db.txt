@@ -1,0 +1,13 @@
+drop database datawiz ;
+create database datawiz ;
+
+\connect datawiz ;
+
+create table barcodes(
+id serial PRIMARY KEY,
+code bytea NOT NULL,
+text bytea NOT NULL,
+email bytea NOT NULL,
+display_name bytea NOT NULL,
+reviews json NOT NULL
+);
